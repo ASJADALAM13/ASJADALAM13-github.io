@@ -72,8 +72,6 @@
         transition: scale 400ms;
         
     }
-    .wrapper:hover img{
-        scale: 120%;
     }
     /* Add styles for social media icons */
     .social-icons {
