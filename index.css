@@ -1,105 +1,261 @@
-    body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        background-color: #eaf6f6;
-        background-size: cover;
-        color: #333;
-    }
 
-    header {
-        background-color: #222831;
-        color: #fff;
-        text-align: center;
-        padding: 1em 0;
-    }
-
-    section {
-        max-width: 800px;
-        margin: 2em auto;
-        padding: 0 1em;
-    }
-
-    h1{
-        color: #007bff;
-        font-size:xx-large;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        text-align:left;
-        padding-left: 20px;
-    }
-    h2 {
-        color: #007bff;
-        font-size:x-large;
-        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        text-align:right;
-        padding-right:20px;
-
-
-    }
-    h3 {
-        color: #007bff;}
-
-    a {
-        color: #007bff;
-        text-decoration: none;
-    }
-
-    .project {
-        margin-bottom: 2em;
-    }
-
-    footer {
-        background-color: #222831;
-        color: #fff;
-        text-align: center;
-        padding: 1em 0;
-    }
-    .wrapper{
-        width: 150px; 
-    height: 150px; 
-    border-radius: 50%; 
-    overflow: hidden; 
-    margin: 20px auto; 
-    border: 2px solid #ccc; 
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);  
-    }
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+    background-color:#363636;
+    color: #f8f8f8;
     
-    .wrapper img{
-        width: 100%; height:auto;
+}
 
-        align-content: space-around;
-        transition: scale 400ms;
-        
-    }
-    /* Add styles for social media icons */
-    .social-icons {
-        margin-top: 20px;
-    }
+section {
+    border-top: 2px solid #ccc; /* Adds a thin line between sections */
+}
 
-    .social-icons a {
-        font-size: 20px;
-        margin-right: 10px;
-        color: #fff;
-        text-decoration: none;
-    }
+/* Adjust for specific sections */
+#home {
+    border-top: none; /* Optional: remove the border at the top of the home section */
+}
 
-    .footer {
-        background-color: #007bff;
-        color: #fff;
-        text-align: center;
-        padding:0;
-        position: fixed;
-        bottom: 100;
-        width: 100%;
-        margin:0;
-    }
+#about, #projects, #skills, #contact {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
 
-    body {
-        margin-bottom:0px; /* Adjust the value as needed */
-    }
-    
-    footer {
-        margin-top: 200px; /* Adjust the value as needed */
-    }
-    
+
+
+/* Navbar Styles */
+.navbar {
+    background-color:#252525!important ;/* Change this color to any you like */;
+    color: #f9ffea;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+/* Home Section */
+#home {
+    background: url('../test/back.jpg') no-repeat center center/cover;
+    color:#f9ffea;
+    text-shadow: 2px 2px 5px #494949;
+    height: 100%; 
+    width: 100%;
+}
+
+#home .container{
+    height: 50%;
+    padding-top: 100px;
+}
+
+
+#home .display-4{
+    margin-top:-4%;
+}
+
+#home .lead{
+width:50%;
+margin-left:25%;
+height: fit-content;
+}
+
+
+#home .btn {
+    height:fit-content;
+    margin-top:0px;
+    color: #f9ffea; ;
+    background-color: rgb(130, 6, 6);
+    border:2px;
+}
+
+/* About Section */
+#about img { 
+    max-width: 250px;
+}
+#about .mb-4{
+    font-size: 40px;
+    text-align: center;
+    width:100%;
+}
+
+#about p{
+    font-size: 28px; 
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* About Section - Social Media Icons */
+.social-icons a {
+    color: #fff; /* Set the icon color to white */
+    margin-right: 15px;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.social-icons a:hover {
+    color: rgb(130, 6, 6) !important; /* Color change on hover */
+}
+
+
+/* Projects Section */
+
+#projects {
+    background-color:#363636!important;/* Change this color to any you like */
+    padding: 50px 0;
+}
+
+#projects .card {
+    transition: transform 0.3s;
+}
+
+#projects .card:hover {
+    transform: translateY(-10px);
+}
+
+#projects .card-body{
+    background-color:#252525;
+    color: #f9ffea;
+}
+
+#projects .card-footer{
+    text-align: center;
+    background-color: rgb(130, 6, 6);
+    ;
+}
+
+#projects .card-footer a {
+    text-decoration: none !important; /* This targets links directly */
+    color: #e6e6e6;
+}
+
+
+/* Skills Section */
+#skills ul {
+    list-style: none;
+    padding: 0;
+}
+
+#skills li {
+    padding: 5px 0;
+}
+
+  /* Programming Languages Progress Bar Colors */
+.progress-bar-python {
+    background-color:#004D4D  !important; 
+      
+}
+
+.progress-bar-css {
+    background-color:#003366 !important; 
+
+
+}
+
+.progress-bar-sql {
+
+    background-color:#3D9970!important; 
+
+
+}
+
+.progress-bar-javascript {
+    background-color:#4682B4!important; 
+}
+
+/* Tools & Technologies Progress Bar Colors */
+.progress-bar-tensorflow {
+    background-color: #FF8C00 !important; 
+
+}
+
+.progress-bar-scikit-learn {
+    background-color: #B8860B  !important; 
+}
+
+.progress-bar-tableau {
+    background-color: #483D8B !important; 
+}
+
+.progress-bar-git {
+    background-color: #800000 !important;
+}
+
+/* Contact Section */
+#contact {
+    background-color: #363636 !important;
+    padding: 40px 0;
+  }
+  
+  /* Center the form and set max width */
+  #contact form {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  /* Style the labels and inputs */
+  #contact label {
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  #contact input, #contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* Style the button */
+  #contact .btn {
+    background-color: rgb(130, 6, 6);
+    border: none;
+    padding: 10px 20px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    display: block;
+    width: 50%; /* Full-width button */
+    border-radius: 5px;
+  }
+  
+  /* Adjust the width of the text area */
+  #message {
+    resize: none; /* Disable resizing */
+  }
+  
+  /* Add some margin to the heading */
+  #contact h2 {
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+
+
+/* Footer */
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    bottom: 0;
+    width: 100%;
+}
+
+.social-icons a {
+    color: #fff;
+
+
+
+
+    margin-right: 10px;
+    text-decoration:none;
+}
+
+.social-icons a:hover {
+    color: #3498db;
+}
+
+
