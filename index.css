@@ -1,20 +1,26 @@
-/* /* /* =========================================================
+/* =========================================================
    GLOBAL
 ========================================================= */
 
 :root {
-    --bg: #080b12;
-    --bg-soft: #0d111a;
-    --card: #111722;
-    --card-hover: #151d2b;
+    --bg: #F6F1E8;
+    --bg-soft: #EDE5D8;
 
-    --text: #f5f7fa;
-    --muted: #9ba6b5;
+    --card: #FFFDF8;
+    --card-hover: #FFFFFF;
 
-    --accent: #38bdf8;
-    --accent-dark: #0284c7;
+    --text: #29252B;
+    --muted: #6F6862;
 
-    --border: rgba(255, 255, 255, 0.09);
+    --accent: #D9684A;
+    --accent-dark: #B94F35;
+
+    --secondary: #3F8F83;
+
+    --header: #30283D;
+    --footer: #30283D;
+
+    --border: rgba(48, 40, 61, 0.13);
 
     --container-width: 1150px;
 }
@@ -43,7 +49,7 @@ a {
 
 ::selection {
     background: var(--accent);
-    color: #001018;
+    color: #ffffff;
 }
 
 
@@ -53,20 +59,20 @@ a {
 
 .navbar {
     padding: 18px 0;
-    background: rgba(8, 11, 18, 0.75);
+    background: var(--header);
     backdrop-filter: blur(15px);
-    border-bottom: 1px solid transparent;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
     transition: all 0.3s ease;
 }
 
 .navbar.scrolled {
-    background: rgba(8, 11, 18, 0.95);
-    border-bottom-color: var(--border);
+    background: #292233;
+    border-bottom-color: rgba(255, 255, 255, 0.12);
     padding: 12px 0;
 }
 
 .navbar-brand {
-    color: var(--text) !important;
+    color: #FFFDF8 !important;
     font-size: 1.45rem;
     font-weight: 800;
     letter-spacing: -0.5px;
@@ -74,12 +80,12 @@ a {
 
 .navbar-brand span,
 .footer-logo span {
-    color: var(--accent);
+    color: #E9A28B;
 }
 
 .navbar-toggler {
-    border: 1px solid var(--border);
-    color: var(--text);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    color: #FFFDF8;
     padding: 8px 12px;
 }
 
@@ -88,11 +94,11 @@ a {
 }
 
 .navbar-toggler i {
-    color: var(--accent);
+    color: #E9A28B;
 }
 
 .nav-link {
-    color: var(--muted) !important;
+    color: #D8D1DB !important;
     font-size: 0.88rem;
     font-weight: 500;
     margin-left: 24px;
@@ -101,7 +107,7 @@ a {
 
 .nav-link:hover,
 .nav-link.active {
-    color: var(--accent) !important;
+    color: #F2A083 !important;
 }
 
 .nav-btn {
@@ -111,8 +117,8 @@ a {
 
     padding: 9px 17px;
 
-    color: var(--text);
-    border: 1px solid var(--accent);
+    color: #FFFDF8;
+    border: 1px solid #E9A28B;
     border-radius: 7px;
 
     font-size: 0.85rem;
@@ -122,8 +128,8 @@ a {
 }
 
 .nav-btn:hover {
-    background: var(--accent);
-    color: #031018;
+    background: #E9A28B;
+    color: #30283D;
 }
 
 
@@ -142,13 +148,13 @@ a {
 
     background:
         radial-gradient(
-            circle at 75% 30%,
-            rgba(56, 189, 248, 0.12),
-            transparent 30%
+            circle at 78% 25%,
+            rgba(217, 104, 74, 0.15),
+            transparent 28%
         ),
         radial-gradient(
-            circle at 10% 80%,
-            rgba(2, 132, 199, 0.08),
+            circle at 15% 75%,
+            rgba(63, 143, 131, 0.10),
             transparent 30%
         ),
         var(--bg);
@@ -160,12 +166,12 @@ a {
 
     background-image:
         linear-gradient(
-            rgba(255,255,255,0.025) 1px,
+            rgba(48, 40, 61, 0.035) 1px,
             transparent 1px
         ),
         linear-gradient(
             90deg,
-            rgba(255,255,255,0.025) 1px,
+            rgba(48, 40, 61, 0.035) 1px,
             transparent 1px
         );
 
@@ -194,7 +200,7 @@ a {
     border: 1px solid var(--border);
     border-radius: 50px;
 
-    background: rgba(255,255,255,0.025);
+    background: rgba(255, 255, 255, 0.55);
 
     color: var(--muted);
     font-size: 0.78rem;
@@ -206,10 +212,10 @@ a {
     width: 7px;
     height: 7px;
 
-    background: #22c55e;
+    background: #3FA66B;
     border-radius: 50%;
 
-    box-shadow: 0 0 12px rgba(34,197,94,0.8);
+    box-shadow: 0 0 10px rgba(63, 166, 107, 0.5);
 }
 
 .hero-small {
@@ -222,6 +228,8 @@ a {
 }
 
 .hero-title {
+    color: var(--text);
+
     font-size: clamp(4rem, 9vw, 7.5rem);
     line-height: 0.95;
 
@@ -236,6 +244,8 @@ a {
 }
 
 .hero-role {
+    color: var(--text);
+
     font-size: clamp(1.5rem, 3vw, 2.4rem);
     font-weight: 600;
 
@@ -249,7 +259,7 @@ a {
 }
 
 .hero-specialization span {
-    color: var(--accent);
+    color: var(--secondary);
     margin: 0 7px;
 }
 
@@ -288,24 +298,24 @@ a {
 
 .btn-primary-custom {
     background: var(--accent);
-    color: #031018;
+    color: #ffffff;
 }
 
 .btn-primary-custom:hover {
-    background: #7dd3fc;
-    color: #031018;
+    background: var(--accent-dark);
+    color: #ffffff;
     transform: translateY(-2px);
 }
 
 .btn-secondary-custom {
-    border: 1px solid var(--border);
-    background: rgba(255,255,255,0.025);
+    border: 1px solid rgba(48, 40, 61, 0.18);
+    background: transparent;
     color: var(--text);
 }
 
 .btn-secondary-custom:hover {
-    border-color: var(--accent);
-    color: var(--accent);
+    border-color: var(--secondary);
+    color: var(--secondary);
     transform: translateY(-2px);
 }
 
@@ -336,7 +346,7 @@ a {
     align-items: center;
     gap: 8px;
 
-    color: #596474;
+    color: #8C8178;
     font-size: 0.65rem;
     letter-spacing: 3px;
 }
@@ -370,6 +380,8 @@ a {
 }
 
 .section-heading h2 {
+    color: var(--text);
+
     font-size: clamp(2rem, 5vw, 3.2rem);
     line-height: 1.15;
     font-weight: 700;
@@ -392,6 +404,8 @@ a {
 }
 
 .about-large {
+    color: var(--text);
+
     font-size: clamp(1.6rem, 3vw, 2.2rem);
     line-height: 1.4;
     font-weight: 500;
@@ -430,7 +444,7 @@ a {
     right: -90px;
     top: -90px;
 
-    background: rgba(56,189,248,0.12);
+    background: rgba(217, 104, 74, 0.10);
     border-radius: 50%;
 }
 
@@ -444,13 +458,15 @@ a {
 
     border-radius: 10px;
 
-    background: rgba(56,189,248,0.1);
+    background: rgba(217, 104, 74, 0.10);
     color: var(--accent);
 
     margin-bottom: 25px;
 }
 
 .about-card h3 {
+    color: var(--text);
+
     font-size: 1.2rem;
     margin-bottom: 25px;
 }
@@ -512,12 +528,12 @@ a {
 
     border-radius: 50%;
 
-    background: rgba(56,189,248,0.06);
+    background: rgba(217, 104, 74, 0.05);
 }
 
 .project-card:hover {
     transform: translateY(-7px);
-    border-color: rgba(56,189,248,0.35);
+    border-color: rgba(217, 104, 74, 0.40);
     background: var(--card-hover);
 }
 
@@ -530,7 +546,7 @@ a {
 }
 
 .project-number {
-    color: #566170;
+    color: #8C8178;
     font-family: monospace;
     font-size: 0.85rem;
 }
@@ -552,7 +568,7 @@ a {
     align-items: center;
     justify-content: center;
 
-    background: rgba(56,189,248,0.08);
+    background: rgba(217, 104, 74, 0.10);
     color: var(--accent);
 
     border-radius: 12px;
@@ -571,6 +587,8 @@ a {
 }
 
 .project-card h3 {
+    color: var(--text);
+
     font-size: 1.65rem;
     font-weight: 700;
 
@@ -579,7 +597,7 @@ a {
 }
 
 .project-subtitle {
-    color: #697586;
+    color: #81776F;
     font-size: 0.9rem;
     margin-bottom: 18px;
 }
@@ -604,21 +622,21 @@ a {
 .mini-tags span {
     padding: 5px 9px;
 
-    border: 1px solid var(--border);
+    border: 1px solid rgba(48, 40, 61, 0.12);
     border-radius: 5px;
 
-    background: rgba(255,255,255,0.025);
+    background: #F3EDE3;
 
-    color: #aeb8c5;
+    color: #5E5751;
 
     font-size: 0.72rem;
 }
 
 .building-badge {
-    color: #fbbf24;
+    color: #9A6A16;
 
-    border: 1px solid rgba(251,191,36,0.25);
-    background: rgba(251,191,36,0.07);
+    border: 1px solid rgba(154, 106, 22, 0.22);
+    background: rgba(154, 106, 22, 0.08);
 
     border-radius: 20px;
 
@@ -633,6 +651,8 @@ a {
 }
 
 .other-projects-heading h3 {
+    color: var(--text);
+
     font-size: 1.3rem;
 }
 
@@ -651,7 +671,7 @@ a {
 
 .mini-project-card:hover {
     transform: translateY(-5px);
-    border-color: rgba(56,189,248,0.3);
+    border-color: rgba(63, 143, 131, 0.40);
 }
 
 .mini-icon {
@@ -661,6 +681,8 @@ a {
 }
 
 .mini-project-card h4 {
+    color: var(--text);
+
     font-size: 1.05rem;
     margin-bottom: 10px;
 }
@@ -676,17 +698,25 @@ a {
     display: inline-block;
     margin-top: 15px;
     padding: 8px 16px;
+
     background: var(--accent);
-    color: #fff !important;
+    color: #ffffff !important;
+
     text-decoration: none !important;
-    border-radius: 4px;
+    border-radius: 5px;
+
     font-size: 0.9rem;
     font-weight: 600;
-    transition: background 0.2s ease;
+
+    transition:
+        background 0.2s ease,
+        transform 0.2s ease;
 }
 
 .project-btn:hover {
     background: var(--accent-dark);
+    color: #ffffff !important;
+    transform: translateY(-2px);
 }
 
 
@@ -717,7 +747,7 @@ a {
 }
 
 .skill-category:hover {
-    border-color: rgba(56,189,248,0.3);
+    border-color: rgba(63, 143, 131, 0.35);
 }
 
 .skill-category-header {
@@ -729,11 +759,13 @@ a {
 }
 
 .skill-category-header i {
-    color: var(--accent);
+    color: var(--secondary);
     font-size: 1.15rem;
 }
 
 .skill-category-header h3 {
+    color: var(--text);
+
     font-size: 1rem;
     margin: 0;
 }
@@ -778,7 +810,7 @@ a {
 
     width: 1px;
 
-    background: rgba(56,189,248,0.25);
+    background: rgba(217, 104, 74, 0.25);
 }
 
 .experience-marker span {
@@ -791,7 +823,7 @@ a {
 
     background: var(--accent);
 
-    box-shadow: 0 0 15px rgba(56,189,248,0.7);
+    box-shadow: 0 0 15px rgba(217, 104, 74, 0.35);
 }
 
 .experience-header {
@@ -812,6 +844,8 @@ a {
 }
 
 .experience-content h3 {
+    color: var(--text);
+
     font-size: 1.3rem;
     margin-bottom: 3px;
 }
@@ -827,7 +861,7 @@ a {
 }
 
 .experience-role {
-    color: #718096;
+    color: #81776F;
     font-size: 0.75rem;
 
     padding: 6px 10px;
@@ -854,9 +888,14 @@ a {
 
     background:
         radial-gradient(
-            circle at center,
-            rgba(56,189,248,0.09),
-            transparent 55%
+            circle at 80% 20%,
+            rgba(217, 104, 74, 0.10),
+            transparent 35%
+        ),
+        radial-gradient(
+            circle at 20% 80%,
+            rgba(63, 143, 131, 0.08),
+            transparent 35%
         ),
         var(--card);
 
@@ -867,6 +906,8 @@ a {
 }
 
 .contact-box h2 {
+    color: var(--text);
+
     font-size: clamp(2.2rem, 5vw, 3.5rem);
     line-height: 1.15;
 
@@ -889,7 +930,7 @@ a {
 }
 
 .contact-email {
-    color: #657184;
+    color: #81776F;
 
     font-size: 0.8rem;
 
@@ -902,8 +943,8 @@ a {
 ========================================================= */
 
 footer {
-    background: #05070b;
-    border-top: 1px solid var(--border);
+    background: var(--footer);
+    border-top: 1px solid rgba(255, 255, 255, 0.10);
 
     padding: 45px 0 25px;
 }
@@ -917,12 +958,14 @@ footer {
 }
 
 .footer-logo {
+    color: #FFFDF8;
+
     font-size: 1.2rem;
     font-weight: 800;
 }
 
 .footer-content p {
-    color: #626d7c;
+    color: #C8C0CB;
     font-size: 0.75rem;
     margin: 0;
 }
@@ -933,24 +976,24 @@ footer {
 }
 
 .footer-socials a {
-    color: #697586;
+    color: #C8C0CB;
     transition: color 0.25s ease;
 }
 
 .footer-socials a:hover {
-    color: var(--accent);
+    color: #F2A083;
 }
 
 .footer-bottom {
     text-align: center;
 
-    color: #454d59;
+    color: #A69BA9;
     font-size: 0.7rem;
 
     margin-top: 35px;
     padding-top: 20px;
 
-    border-top: 1px solid rgba(255,255,255,0.05);
+    border-top: 1px solid rgba(255, 255, 255, 0.10);
 }
 
 
@@ -980,7 +1023,7 @@ footer {
 @media (max-width: 991px) {
 
     .navbar {
-        background: rgba(8, 11, 18, 0.97);
+        background: var(--header);
     }
 
     .navbar-nav {
@@ -1081,7 +1124,4 @@ footer {
         display: none;
     }
 
-}  
-
-
-
+}
