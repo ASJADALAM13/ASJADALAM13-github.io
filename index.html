@@ -3,272 +3,784 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Asjad's Portfolio</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <title>Asjad Alam | Software Engineer</title>
+    <meta
+        name="description"
+        content="Asjad Alam - Software Engineer specializing in Python Backend, AI Applications and Computer Vision."
+    >
+
+    <!-- Bootstrap -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+
+    <!-- Google Font -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="index.css">
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-     <!-- Add this line to include Font Awesome CSS -->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
-<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="70" tabindex="0">
 
-    <!-- Navigation -->
-    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-      <div class="container">
-        <a class="navbar-brand" href="#">Asjad Alam</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" href="#home">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#about">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#projects">Projects</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#skills">Skills</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+<body>
 
-    <!-- Home Section -->
-    <section id="home" class="vh-100 d-flex align-items-center bg-light">
-      <div class="container text-center">
-        <h5 class="display-4">Hello, I'm Asjad</h5>
-        <p class="lead">Data Scientist | Machine Learning Enthusiast | Data Visualization Expert</p>
-        <a href="#projects" class="btn btn-primary btn-lg">View My Work</a>
-      </div>
-    </section>
+<!-- ================= NAVBAR ================= -->
 
-    <!-- About Section -->
-    <section id="about" class="py-5">
-      <div class="container">
-        <h2 class="mb-4">About Me</h2>
-        <div class="row">
-          <div class="col-md-4">
-            <img src="IMG_2670.jpg" alt="Profile Picture" class="img-fluid rounded-circle">
-          </div>
-          <div class="col-md-8">
-<p>
-Hi, I'm Asjad, currently pursuing a BTech in Artificial Intelligence.<br>
-I have hands-on experience with Python, SQL, Pandas, PyQt5, Django, and Excel, along with a strong foundation in Statistics and Data Analysis.
-</p>
-<p>
-  Skilled in data cleaning, visualization, and web scraping, with a focus on building real-world applications.<br>
-  Passionate about solving problems through data-driven solutions and user-friendly interfaces.
-</p>    
-      <div class="social-icons mt-3">
-        <a href="https://instagram.com/_its_asjad?igshid=MTNiYzNiMzkwZA==" class="fab fa-instagram fa-2x mx-2" target="_blank"></a>
-        <a href="https://www.linkedin.com/in/asjad-alam-762770299/" class="fab fa-linkedin fa-2x mx-2" target="_blank"></a>
-        <a href="https://github.com/ASJADALAM13" class="fab fa-github fa-2x mx-2" target="_blank"></a>
-      </div>
-    </div>
-  </div>
-</div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="bg-light py-5">
-      <div class="container">
-        <h2 class="mb-4">Projects</h2>
-        <div class="row">
-          <!-- Project 1 -->
-          <div class="col-md-4 mb-4">
-            <div class="card h-100">
-              <img src="images/D-M-App.webp" class="card-img-top" alt="Project 2">
-              <div class="card-body">
-                <h5 class="card-title">Data Mate App </h5>
-                <p class="card-text"><br>A modern desktop app for quick, clean, and efficient data entry, especially designed for small businesses, shopkeepers, and professionals working with Excel!
-🔧 Built using Python + PyQt5, it's fast, offline, and intuitive.</p>
-              </div>
-              <div class="card-footer">
-                <a href="https://www.linkedin.com/posts/asjad-alam-762770299_datamate-python-pyqt5-activity-7354144633515372546-nVcG?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEgxnzoBZzMyOeB3ULUr2Yi6JUf9mHNy9f8" class="btn-btn-primary">View Details/Download App</a>
-              </div>
-            </div>
-          </div><!-- Project 2 -->
-          <div class="col-md-4 mb-4">
-            <div class="card h-100">
-              <img src="images/Book_Reviews.jpg" class="card-img-top" alt="Project 3">
-              <div class="card-body">
-                <h5 class="card-title">GOODREADS REVIEW SCRAPER</h5>
-                <p class="card-text">"
-                  Discover what readers are saying! Our web scraping tool extracts real customer reviews from Goodreads, giving you insights into books before you pick your next read. Get unbiased opinions, ratings, and trends—all in one place!"</p>
-              </div>
-              <div class="card-footer">
-                <a href="https://asjad.pythonanywhere.com/" class="btn-btn-primary">View Details</a>
-              </div>
-            </div>
-          </div>
-
-         <!-- Project 3 -->
-          <div class="col-md-4 mb-4">
-            <div class="card h-100">
-              <img src="images/tic-tac-toe.webp" class="card-img-top" alt="Project 1">
-              <div class="card-body">
-                <h5 class="card-title">TIC-TAC-TOE GAME</h5>
-                <p class="card-text">
-                  <br>A classic Tic-Tac-Toe game built with Python,
-                   featuring both "local multiplayer" and an "AI opponent" for challenging gameplay!
-                </p>
-              </div>
-              <div class="card-footer">
-                <a href="https://github.com/ASJADALAM13/Projects/blob/main/Tic-Tac-Toe.py" class="btn-btn-primary">View Details</a>
-              </div>
-            </div>
-          </div>
-          <!-- Project 4 -->
-          <div class="col-md-4 mb-4">
-            <div class="card h-100">
-              <img src="images/QR_CODE_GENERATOR.png" class="card-img-top" alt="Project 3">
-              <div class="card-body">
-                <h5 class="card-title">QR Code Generator</h5>
-                <p class="card-text">A simple Python program that generates QR codes from input text or URLs using the qrcode library. It converts data into scannable QR codes, saving them as image files for easy use.</p>
-              </div>
-              <div class="card-footer">
-                <a href="https://github.com/ASJADALAM13/Projects/blob/main/qr_code_gnrtr.py" class="btn-btn-primary">View Details</a>
-              </div>
-            </div>
-          </div>
-          <!-- Add more projects as needed -->
-        </div>
-      </div>
-    </section>
-
-  <!-- Skills Section -->
-<section id="skills" class="py-5">
-  <div class="container">
-    <h2 class="mb-4">Skills</h2>
-    <div class="container mt-5">
-      <div class="row">
-      
-        <!-- Programming Languages -->
-        <div class="col-md-6">
-          <h3>Programming Languages</h3>
-          <ul class="list-group">
-            <li class="list-group-item">
-              Python
-              <div class="progress mt-2">
-                <div class="progress-bar bg-success" role="progressbar" style="width: 90%;">90%</div>
-              </div>
-            </li>
-            <li class="list-group-item">
-              SQL
-              <div class="progress mt-2">
-                <div class="progress-bar bg-info" role="progressbar" style="width: 80%;">80%</div>
-              </div>
-            </li>
-            <li class="list-group-item">
-              JavaScript
-              <div class="progress mt-2">
-                <div class="progress-bar bg-warning" role="progressbar" style="width: 70%;">70%</div>
-              </div>
-            </li>
-            <li class="list-group-item">
-              HTML & CSS
-              <div class="progress mt-2">
-                <div class="progress-bar bg-primary" role="progressbar" style="width: 75%;">75%</div>
-              </div>
-            </li>
-          </ul>
-        </div>
-
-        <!-- Tools & Technologies -->
-        <div class="col-md-6">
-          <h3>Tools & Technologies</h3>
-          <ul class="list-group">
-            <li class="list-group-item">
-              Pandas & NumPy
-              <div class="progress mt-2">
-                <div class="progress-bar bg-secondary" role="progressbar" style="width: 85%;">85%</div>
-              </div>
-            </li>
-            <li class="list-group-item">
-              Machine Learning (scikit-learn)
-              <div class="progress mt-2">
-                <div class="progress-bar bg-danger" role="progressbar" style="width: 75%;">75%</div>
-              </div>
-            </li>
-            <li class="list-group-item">
-              PyQt5
-              <div class="progress mt-2">
-                <div class="progress-bar bg-dark" role="progressbar" style="width: 70%;">70%</div>
-              </div>
-            </li>
-            <li class="list-group-item">
-              Microsoft Excel
-              <div class="progress mt-2">
-                <div class="progress-bar bg-success" role="progressbar" style="width: 80%;">80%</div>
-              </div>
-            </li>
-            <li class="list-group-item">
-              Git & GitHub
-              <div class="progress mt-2">
-                <div class="progress-bar bg-info" role="progressbar" style="width: 75%;">75%</div>
-              </div>
-            </li>
-          </ul>
-        </div>
-
-      </div>
-    </div>
-  </div>
-</section>
-
-   
-  <!-- Contact Section -->
-  <section id="contact" class="bg-light py-5">
+<nav id="navbar" class="navbar navbar-expand-lg fixed-top">
     <div class="container">
-      <h2 class="mb-4">Contact Me</h2>
-      <form onsubmit="sendEmail(); return false;">
-        <div class="mb-3">
-          <label for="name" class="form-label">Name</label>
-          <input type="text" class="form-control" id="name" placeholder="Your Name" required>
-        </div>
-        <div class="mb-3">
-          <label for="email" class="form-label">Email address</label>
-          <input type="email" class="form-control" id="email" value="alamasjad13@gmail.com" disabled required>
-        </div>
-        <div class="mb-3">
-          <label for="message" class="form-label">Message</label>
-          <textarea class="form-control" id="message" rows="5" placeholder="Your message..." required></textarea>
-        </div>
-        <button type="submit" class="btn">Send Message</button>
-      </form>
-    </div>
-  </section>
 
-    <!-- Footer -->
-     <section>
-    <footer>
-      <p>&copy; 2023 MD ASJAD ALAM. All rights reserved.</p>
-      <!-- Add social media icons here -->
-      <div class="social-icons">
-          <a href="https://instagram.com/_its_asjad?igshid=MTNiYzNiMzkwZA==" class="fab fa-instagram"></a>
-          <a href="https://www.linkedin.com/in/asjad-alam-762770299/" class="fab fa-linkedin"></a>
-          <!-- Add more social media icons as needed -->
-          <a href="https://github.com/ASJADALAM13" class="fab fa-github"></a>
-          <!-- Add more social media icons as needed -->
-          <a href="mailto:alamasjad13@gmail.com@gmail.com" class="fas fa-envelope"></a>
-      </div>
-  </footer>
+        <a class="navbar-brand" href="#home">
+            Asjad<span>.</span>
+        </a>
+
+        <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-label="Toggle navigation"
+        >
+            <i class="fas fa-bars"></i>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+
+            <ul class="navbar-nav ms-auto align-items-lg-center">
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="#home">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects">Projects</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#skills">Skills</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#experience">Experience</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+
+                <li class="nav-item ms-lg-3">
+                    <a
+                        class="nav-btn"
+                        href="resume.pdf"
+                        target="_blank"
+                    >
+                        Resume <i class="fas fa-arrow-up-right-from-square"></i>
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+    </div>
+</nav>
+
+
+<!-- ================= HERO ================= -->
+
+<section id="home" class="hero-section">
+
+    <div class="hero-grid"></div>
+
+    <div class="container hero-container">
+
+        <div class="row align-items-center">
+
+            <div class="col-lg-8">
+
+                <div class="hero-badge reveal">
+                    <span class="status-dot"></span>
+                    Open to Software Engineering Opportunities
+                </div>
+
+                <p class="hero-small reveal">
+                    HELLO, I'M
+                </p>
+
+                <h1 class="hero-title reveal">
+                    Asjad <span>Alam</span>
+                </h1>
+
+                <h2 class="hero-role reveal">
+                    Software Engineer
+                </h2>
+
+                <p class="hero-specialization reveal">
+                    Python Backend <span>•</span>
+                    AI Applications <span>•</span>
+                    Computer Vision
+                </p>
+
+                <p class="hero-description reveal">
+                    I build practical software systems, backend APIs,
+                    AI-powered applications and real-time computer vision
+                    solutions using Python and modern web technologies.
+                </p>
+
+                <div class="hero-buttons reveal">
+
+                    <a href="#projects" class="btn-primary-custom">
+                        View Projects
+                        <i class="fas fa-arrow-down"></i>
+                    </a>
+
+                    <a
+                        href="https://github.com/ASJADALAM13"
+                        target="_blank"
+                        class="btn-secondary-custom"
+                    >
+                        <i class="fab fa-github"></i>
+                        GitHub
+                    </a>
+
+                </div>
+
+                <div class="hero-socials reveal">
+
+                    <a
+                        href="www.linkedin.com/in/md-asjad-alam-762770299"
+                        target="_blank"
+                        aria-label="LinkedIn"
+                    >
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+
+                    <a
+                        href="https://github.com/ASJADALAM13"
+                        target="_blank"
+                        aria-label="GitHub"
+                    >
+                        <i class="fab fa-github"></i>
+                    </a>
+
+                    <a
+                        href="mailto:alamasjad13@gmail.com"
+                        aria-label="Email"
+                    >
+                        <i class="fas fa-envelope"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="scroll-indicator">
+            <span>SCROLL</span>
+            <i class="fas fa-arrow-down"></i>
+        </div>
+
+    </div>
 </section>
-    <!-- Bootstrap JS and dependencies (Popper.js) -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Custom JS -->
-    <script src="test.js"></script>
+
+
+<!-- ================= ABOUT ================= -->
+
+<section id="about" class="section">
+
+    <div class="container">
+
+        <div class="section-heading reveal">
+            <p class="section-label">01 / ABOUT</p>
+            <h2>Building software that solves real problems.</h2>
+        </div>
+
+        <div class="row g-5 align-items-center">
+
+            <div class="col-lg-7 reveal">
+
+                <p class="about-large">
+                    I'm a Computer Science graduate focused on
+                    <strong>Python backend development, AI applications,
+                    and computer vision.</strong>
+                </p>
+
+                <p class="about-text">
+                    My current work and learning focus on building APIs,
+                    backend systems, AI-powered applications and real-time
+                    computer vision solutions.
+                </p>
+
+                <p class="about-text">
+                    I enjoy taking an idea from a prototype to a working
+                    application, while keeping the code modular, practical
+                    and easy to extend.
+                </p>
+
+            </div>
+
+            <div class="col-lg-5 reveal">
+
+                <div class="about-card">
+
+                    <div class="about-card-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+
+                    <h3>Current Focus</h3>
+
+                    <div class="focus-list">
+
+                        <div>
+                            <span>01</span>
+                            Python Backend
+                        </div>
+
+                        <div>
+                            <span>02</span>
+                            FastAPI & REST APIs
+                        </div>
+
+                        <div>
+                            <span>03</span>
+                            AI Applications & RAG
+                        </div>
+
+                        <div>
+                            <span>04</span>
+                            Computer Vision
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+<!-- ================= PROJECTS ================= -->
+
+<section id="projects" class="section projects-section">
+
+    <div class="container">
+
+        <div class="section-heading reveal">
+            <p class="section-label">02 / PROJECTS</p>
+            <h2>Things I've built.</h2>
+            <p>
+                A selection of projects focused on backend systems,
+                AI and real-time computer vision.
+            </p>
+        </div>
+
+
+        <!-- FEATURED PROJECTS -->
+
+        <div class="row g-4">
+
+
+            <!-- ZONE X -->
+
+            <div class="col-lg-6 reveal">
+
+                <article class="project-card featured-project">
+
+                    <div class="project-top">
+
+                        <div class="project-number">
+                            01
+                        </div>
+
+                        <div class="project-links">
+
+                            <a
+                                href="#"
+                                aria-label="Zone X project"
+                                title="Project link"
+                            >
+                                <i class="fas fa-arrow-up-right-from-square"></i>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                    <div class="project-icon">
+                        <i class="fas fa-shield-halved"></i>
+                    </div>
+
+                    <span class="project-status">
+                        Computer Vision
+                    </span>
+
+                    <h3>ZONE X</h3>
+
+                    <p class="project-subtitle">
+                        Smart Safety Monitoring System
+                    </p>
+
+                    <p class="project-description">
+                        A real-time safety monitoring system that allows
+                        users to create a virtual fence inside live camera
+                        frames. When a person enters or crosses the restricted
+                        area, the system triggers a buzzer and red-light
+                        violation alert.
+                    </p>
+
+                    <div class="project-tags">
+
+                        <span>Python</span>
+                        <span>YOLOv8</span>
+                        <span>OpenCV</span>
+                        <span>Java</span>
+                        <span>React</span>
+
+                    </div>
+                    <a href="YOUR_PROJECT_LINK"
+   class="project-btn"
+   target="_blank"
+   rel="noopener noreferrer">
+    View Project ↗
+</a>
+                </article>
+
+            </div>
+
+
+            <!-- RESUME SCREENING -->
+
+            <div class="col-lg-6 reveal">
+
+                <article class="project-card featured-project">
+
+                    <div class="project-top">
+
+                        <div class="project-number">
+                            02
+                        </div>
+
+
+                    </div>
+
+                    <div class="project-icon">
+                        <i class="fas fa-user-check"></i>
+                    </div>
+
+                    <span class="project-status">
+                        AI Application
+                    </span>
+
+                    <h3>AI Resume Screening System</h3>
+
+                    <p class="project-subtitle">
+                        Intelligent candidate matching platform
+                    </p>
+
+                    <p class="project-description">
+                        A web application for HR teams to upload multiple
+                        resumes and job descriptions at once. The system
+                        processes candidate information and returns the
+                        top 20 candidates based on the selected job
+                        description.
+                    </p>
+
+                    <div class="project-tags">
+
+                        <span>FastAPI</span>
+                        <span>LangChain</span>
+                        <span>ChromaDB</span>
+                        <span>Python</span>
+                        <span>RAG</span>
+
+                    </div>
+                     <a href="YOUR_PROJECT_LINK"
+   class="project-btn"
+   target="_blank"
+   rel="noopener noreferrer">
+    View Project ↗
+</a>
+                </article>
+           
+            </div>
+
+
+        </div>
+
+
+        <!-- OTHER PROJECTS -->
+
+        <div class="other-projects-heading reveal">
+            <h3>Other Projects</h3>
+        </div>
+
+        <div class="row g-4">
+
+
+            <div class="col-md-4 reveal">
+
+                <article class="mini-project-card">
+
+                    <div class="mini-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+
+                    <h4>Data Mate</h4>
+
+                    <p>
+                        Desktop shop management application built
+                        with Python and PyQt5.
+                    </p>
+
+                    <div class="mini-tags">
+                        <span>Python</span>
+                        <span>PyQt5</span>
+                    </div>
+                    <a href="https://www.linkedin.com/feed/update/urn:li:activity:7354144633515372546/"
+   class="project-btn"
+   target="_blank"
+   rel="noopener noreferrer">
+    View Project ↗
+</a>
+                </article>
+
+            </div>
+
+
+            <div class="col-md-4 reveal">
+
+                <article class="mini-project-card">
+
+                    <div class="mini-icon">
+                        <i class="fas fa-spider"></i>
+                    </div>
+
+                    <h4>Goodreads Review Scraper</h4>
+
+                    <p>
+                        Django-based web scraping project for collecting
+                        and processing book review data.
+                    </p>
+
+                    <div class="mini-tags">
+                        <span>Django</span>
+                        <span>Python</span>
+                        <span>Web Scraping</span>
+                    </div>
+                    <a href="https://www.linkedin.com/feed/update/urn:li:activity:7268884455417614337/" class="project-btn"target="_blank" rel="noopener noreferrer">View Project ↗</a>
+                </article>
+
+            </div>
+
+<div class="col-md-4 reveal">
+
+    <article class="mini-project-card">
+
+        <div class="mini-icon">
+            <i class="fas fa-file-alt"></i>
+        </div>
+
+        <h4>ResumeTailorAI</h4>
+
+        <p>
+            Resume ATS & Job Compatibility Checker that analyzes
+            your resume against a job description and highlights
+            compatibility, missing keywords, and improvement areas.
+        </p>
+
+        <div class="mini-tags">
+            <span>Python</span>
+            <span>FastAPI</span>
+        </div>
+
+        <a href="https://resumeenhancerbyadc.vercel.app/"
+           class="project-btn"
+           target="_blank"
+           rel="noopener noreferrer">
+            Try ResumeTailorAI ↗
+        </a>
+
+    </article>
+
+</div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= SKILLS ================= -->
+
+<section id="skills" class="section">
+
+    <div class="container">
+
+        <div class="section-heading reveal">
+            <p class="section-label">03 / SKILLS</p>
+            <h2>My technical toolkit.</h2>
+        </div>
+
+
+        <div class="skills-grid">
+
+
+            <div class="skill-category reveal">
+
+                <div class="skill-category-header">
+                    <i class="fab fa-python"></i>
+                    <h3>Backend & Programming</h3>
+                </div>
+
+                <div class="skill-tags">
+                    <span>Python</span>
+                    <span>FastAPI</span>
+                    <span>Django</span>
+                    <span>REST APIs</span>
+                    <span>Java</span>
+                    <span>SQL</span>
+                </div>
+
+            </div>
+
+
+            <div class="skill-category reveal">
+
+                <div class="skill-category-header">
+                    <i class="fas fa-brain"></i>
+                    <h3>AI & Computer Vision</h3>
+                </div>
+
+                <div class="skill-tags">
+                    <span>YOLOv8</span>
+                    <span>OpenCV</span>
+                    <span>RAG</span>
+                    <span>LangChain</span>
+                    <span>ChromaDB</span>
+                    <span>Machine Learning</span>
+                </div>
+
+            </div>
+
+
+            <div class="skill-category reveal">
+
+                <div class="skill-category-header">
+                    <i class="fas fa-database"></i>
+                    <h3>Data</h3>
+                </div>
+
+                <div class="skill-tags">
+                    <span>MySQL</span>
+                    <span>Pandas</span>
+                    <span>NumPy</span>
+                    <span>Matplotlib</span>
+                    <span>Data Analysis</span>
+                </div>
+
+            </div>
+
+
+            <div class="skill-category reveal">
+
+                <div class="skill-category-header">
+                    <i class="fas fa-cloud"></i>
+                    <h3>Tools & Development</h3>
+                </div>
+
+                <div class="skill-tags">
+                    <span>Git</span>
+                    <span>GitHub</span>
+                    <span>Docker</span>
+                    <span>AWS</span>
+                    <span>Linux</span>
+                    <span>VS Code</span>
+                    <span>Postman</span>
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+</section>
+
+
+<!-- ================= EXPERIENCE ================= -->
+
+<section id="experience" class="section experience-section">
+
+    <div class="container">
+
+        <div class="section-heading reveal">
+            <p class="section-label">04 / EXPERIENCE</p>
+            <h2>Where I'm working.</h2>
+        </div>
+
+        <div class="experience-card reveal">
+
+            <div class="experience-marker">
+                <span></span>
+            </div>
+
+            <div class="experience-content">
+
+                <div class="experience-header">
+
+                    <div>
+                        <p class="experience-period">
+                            2026 — Present
+                        </p>
+
+                        <h3>Trainee Software Engineer</h3>
+
+                        <p class="experience-company">
+                            Scanalitix
+                        </p>
+                    </div>
+
+                    <div class="experience-role">
+                        Software Engineering
+                    </div>
+
+                </div>
+
+                <p>
+                    Working in a software engineering environment while
+                    developing practical experience across backend,
+                    application development and AI/computer vision
+                    technologies.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+<!-- ================= CONTACT ================= -->
+
+<section id="contact" class="section contact-section">
+
+    <div class="container">
+
+        <div class="contact-box reveal">
+
+            <p class="section-label">05 / CONTACT</p>
+
+            <h2>
+                Let's build something useful.
+            </h2>
+
+            <p>
+                I'm currently looking for opportunities in software
+                engineering, Python backend development and AI.
+            </p>
+
+            <div class="contact-actions">
+
+                <a
+                    href="mailto:alamasjad13@gmail.com"
+                    class="btn-primary-custom"
+                >
+                    <i class="fas fa-envelope"></i>
+                    Email Me
+                </a>
+
+                <a
+                    href="https://github.com/ASJADALAM13"
+                    target="_blank"
+                    class="btn-secondary-custom"
+                >
+                    <i class="fab fa-github"></i>
+                    GitHub
+                </a>
+
+            </div>
+
+            <div class="contact-email">
+                alamasjad13@gmail.com
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <div class="container">
+
+        <div class="footer-content">
+
+            <div class="footer-logo">
+                Asjad<span>.</span>
+            </div>
+
+            <p>
+                Software Engineer • Python • AI • Computer Vision
+            </p>
+
+            <div class="footer-socials">
+
+                <a
+                    href="https://github.com/ASJADALAM13"
+                    target="_blank"
+                    aria-label="GitHub"
+                >
+                    <i class="fab fa-github"></i>
+                </a>
+
+                <a
+                    href="mailto:alamasjad13@gmail.com"
+                    aria-label="Email"
+                >
+                    <i class="fas fa-envelope"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            © <span id="currentYear"></span> Asjad Alam. All rights reserved.
+        </div>
+
+    </div>
+
+</footer>
+
+
+<!-- Bootstrap JS -->
+<script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+</script>
+
+<!-- Custom JS -->
+<script src="test.js"></script>
+
 </body>
 </html>
