@@ -314,8 +314,9 @@ a {
 }
 
 .btn-secondary-custom:hover {
-    border-color: var(--secondary);
-    color: var(--secondary);
+    border-color: var(--accent);
+    background: rgba(217, 104, 74, 0.06);
+    color: var(--accent);
     transform: translateY(-2px);
 }
 
@@ -1118,10 +1119,6 @@ footer {
     .btn-primary-custom,
     .btn-secondary-custom {
         width: 100%;
-    }
-
-    .hero-specialization span {
-        display: none;
     }
 
 }
